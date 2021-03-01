@@ -1,1 +1,4 @@
 http://localhost:8080/actuator/health
+
+http POST http://localhost:8080/product id=1 name=TV amount=10
+http GET http://localhost:8080/product/1
