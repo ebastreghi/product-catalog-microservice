@@ -1,10 +1,14 @@
 #product-catalog
-http://localhost:8080/actuator/health
+http://localhost:8081/actuator/health
 
-http POST http://localhost:8080/product id=1 name=TV amount=10
-http GET http://localhost:8080/product/1
+http POST http://localhost:8081/product id=1 name=TV amount=10
+http GET http://localhost:8081/product/1
 
 
 #config server
 http://localhost:8888/actuator/health
 http://localhost:8888/product-catalog/default --get from git application.yml for this service
+
+
+#Eureka discovery
+http://localhost:9000/  --show registered microservices
